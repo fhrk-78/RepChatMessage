@@ -3,27 +3,29 @@
 	"id": "repchatmessage",
 	"version": "${version}",
 	"name": "RepChatMessage",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Replace Message in Chat",
 	"authors": [
-		"Me!"
+		"PizzaHarumaki"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/fhrk-78/RepChatMessage"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/repchatmessage/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"io.github.fhrk_78.rcm.RepChatMessage"
+		],
+		"client": [
+			"io.github.fhrk_78.rcm.client.RepChatMessageClient"
 		]
 	},
 	"mixins": [
 		"repchatmessage.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.9",
+		"fabricloader": ">=0.15.2",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
 		"fabric-api": "*"
